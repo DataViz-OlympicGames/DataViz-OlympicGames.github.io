@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Dataviz - Olympics</title>
+
+    <link rel="stylesheet"/type="text/css" href="./css/style.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Google Analytics tracking code -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117540199-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-117540199-1');
+    </script>
+
+    <!-- JS Dependencies -->
+
+    <!-- Jarallax -->
+    <script src="./js/jarallax.min.js"></script>
+    <script src="./js/jarallax-video.min.js"></script>
+    <script src="./js/jarallax-element.min.js"></script>
+</head>
+<body>
+
+    <!-- Title -->
+    <div class="jarallax intertitle">
+        <!-- <img class="jarallax-img" src="./images/olympics_2.jpg" alt=""> -->
+        <div><h1>Dataviz - Olympics</h1></div>
+    </div>
+
+    <div class="jarallax intertitle">
+        <img class="jarallax-img" src="./images/olympics_2.jpg" alt="">
+        <div><h1>The Countries</h1></div>
+    </div>
+
+    <!-- Story 0 -->
+    <div id="story-0" class="jarallax">
+        <img class="jarallax-img" src="./images/olympics.jpg" alt="">
+        <iframe src="medals-bubbles.html" width="100%" height="100%" allowtransparency="true"></iframe>
+    </div>
+
+    <!-- Story 1-->
+    <div id="story-1" class="jarallax">
+        <img class="jarallax-img" src="./images/olympics_1.jpg" alt="">
+        <div id="pib-story">
+            <div class='tableauPlaceholder' id='viz1524237487196' style='position: relative'>
+                <noscript><a href='#'><img alt='Tableau de bord 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Me&#47;MedailsGO&#47;Tableaudebord1&#47;1_rss.png' style='border: none' /></a></noscript>
+                <object class='tableauViz'  style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='MedailsGO&#47;Tableaudebord1' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Me&#47;MedailsGO&#47;Tableaudebord1&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                </object>
+            </div>
+            <script type='text/javascript'>
+            var divElement = document.getElementById('viz1524237487196');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            // vizElement.style.width = '100%';
+            // vizElement.style.height = '100%';
+            vizElement.style.width = '100%';
+            vizElement.style.height = '100%';
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+        </div>
+    </div>
+
+    <div class="jarallax intertitle">
+        <!-- <img class="jarallax-img" src="./images/olympics_2.jpg" alt=""> -->
+        <img class="jarallax-img" src="./images/swimmer2.jpg" alt="">
+        <div><h1>The Sports</h1></div>
+    </div>
+
+    <!-- Story 2  -->
+    <div id="story-2" class="jarallax">
+        <img class="jarallax-img" src="./images/track.jpg" alt="">
+        <iframe src="niche.html" width="100%" height="100%" allowtransparency="true"></iframe>
+    </div>
+
+    <div class="jarallax intertitle">
+        <img class="jarallax-img" src="./images/olympics_2.jpg" alt="">
+        <div><h1>The Athletes</h1></div>
+    </div>
+
+    <!-- Story 3 -->
+    <div id="story-3" class="jarallax" data-jarallax-video="https://www.youtube.com/watch?v=pWVyIE30bPs">
+        <iframe src="ratios.html" width="100%" height="100%" allowtransparency="true"></iframe>
+    </div>
+
+    <!-- Story 4 -->
+    <div id="story-4" class="jarallax">
+        <!-- <img class="jarallax-img" src="./images/swimmer2.jpg" alt=""> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+        <div class="gender-general">
+            <div class="gender-text">
+                <div class="gender-titretheme">
+                    <p class="gender-texttitretheme"> En route vers la parité ! </p>
+                </div>
+
+                <div class="gender-commentaire">
+                    <p id='pText'>  </p>
+                    <img src="./images/women_men.png" alt="women_men" class="gender-img" id="gender-img">
+                    <button id="gender-reponse" onclick="genderUpdateLineData()"> Réponse </button>
+                </div>
+
+                <div class="gender-boutons">
+                    <button id="gender-chiffres" onclick="genderAskQuestion()"> Quand les chiffres parlent </button>
+                    <button id="gender-projections" onclick="genderUpdateProjectedData()"> Bientôt la parité ? </button>
+                </div>
+            </div>
+
+            <div class="gender-graph">
+                <canvas id="gender-bar-chart-grouped" width="800" height="450"></canvas>
+            </div>
+        </div>
+
+        <script >
+        var genderCommentaire = document.getElementById("gender-commentaire");
+
+        console.log(genderCommentaire);
+
+        var genderSummerData = {
+            labels: ["1896", "1900", "1904", "1906", "1908", "1912", "1920", "1924", "1928", "1932", "1936", "1948", "1952", "1956", "1960", "1964", "1968", "1972", "1976", "1980", "1984", "1988", "1992", "1996", "2000", "2004", "2008", "2012", "2016"],
+            datasets: [
+                {
+                    label: "Women",
+                    backgroundColor: "#FF69B4",
+                    data: [0, 23, 6, 6, 44, 53, 78, 156, 312, 201, 361, 446, 521, 371, 613, 680, 783, 1060, 1260, 1123, 1567, 2203, 2721, 3521, 4068, 4303, 4610, 4653, 5036]
+                }, {
+                    label: "Men",
+                    backgroundColor: "#00CED1",
+                    data: [176, 1201, 644, 835, 1980, 2354, 2599, 3100, 2937, 1721, 4123, 3950, 4411, 2818, 4738, 4457, 4775, 6053, 4812, 4135, 5224, 6249, 6659, 6820, 6579, 6257, 6290, 5864, 6145]
+                },
+                {
+                    label: 'Line Dataset',
+                    data: [, , , , , , , , , , , , , , , , , , , , , , ],
+
+                    // Changes this dataset to become a line
+                    type: 'line'
+                }
+            ]
+        };
+
+        var genderSummerDataLine = {
+            labels: ["1896", "1900", "1904", "1906", "1908", "1912", "1920", "1924", "1928", "1932", "1936", "1948", "1952", "1956", "1960", "1964", "1968", "1972", "1976", "1980", "1984", "1988", "1992", "1996", "2000", "2004", "2008", "2012", "2016"],
+            datasets: [
+                {
+                    label: "Women",
+                    backgroundColor: "#DC143C",
+                    data: [0, 23, 6, 6, 44, 53, 78, 156, 312, 201, 361, 446, 521, 371, 613, 680, 783, 1060, 1260, 1123, 1567, 2203, 2721, 3521, 4068, 4303, 4610, 4653, 5036]
+                }, {
+                    label: "Men",
+                    backgroundColor: "#6495ED",
+                    data: [176, 1201, 644, 835, 1980, 2354, 2599, 3100, 2937, 1721, 4123, 3950, 4411, 2818, 4738, 4457, 4775, 6053, 4812, 4135, 5224, 6249, 6659, 6820, 6579, 6257, 6290, 5864, 6145]
+                },
+                {
+                    label: 'Line Dataset',
+                    data: [, , , , 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000],
+
+                    // Changes this dataset to become a line
+                    type: 'line'
+                }
+            ]
+        };
+
+        var genderPredictedData = {
+            labels: ["1896", "1900", "1904", "1906", "1908", "1912", "1920", "1924", "1928", "1932", "1936", "1948", "1952", "1956", "1960", "1964", "1968", "1972", "1976", "1980", "1984", "1988", "1992", "1996", "2000", "2004", "2008", "2012", "2016", "2020", "2024", "2028"],
+            datasets: [
+                {
+                    label: "Women",
+                    backgroundColor: "#DC143C",
+                    data: [0, 23, 6, 6, 44, 53, 78, 156, 312, 201, 361, 446, 521, 371, 613, 680, 783, 1060, 1260, 1123, 1567, 2203, 2721, 3521, 4068, 4303, 4610, 4653, 5036, 5327, 5563, 5965]
+                }, {
+                    label: "Men",
+                    backgroundColor: "#6495ED",
+                    data: [176, 1201, 644, 835, 1980, 2354, 2599, 3100, 2937, 1721, 4123, 3950, 4411, 2818, 4738, 4457, 4775, 6053, 4812, 4135, 5224, 6249, 6659, 6820, 6579, 6257, 6290, 5864, 6145, 6430, 6185, 5931]
+                },
+                {
+                    label: 'Line Dataset',
+                    data: [, , , , , , , , , , , , , , , , , , , , , , ],
+
+                    // Changes this dataset to become a line
+                    type: 'line'
+                }
+            ]
+        };
+
+
+
+        var genderChart = new Chart(document.getElementById("gender-bar-chart-grouped"), {
+            type: 'bar',
+            data: genderSummerData,
+            options: {
+                scales: {
+                    xAxes: [{
+                        display: true,
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Années'
+                        }
+                    }],
+                    yAxes: [{
+                        display: true,
+                        ticks: {
+                            beginAtZero: true,
+                            stepValue: 1000,
+                            max: 7000
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Nombre de participants'
+                        }
+                    }]
+                },
+                title: {
+                    display: true,
+                    text: "Évolution du nombre de participants aux JO d'été"
+                }
+            }
+        });
+
+        function genderUpdateProjectedData() {
+
+            genderChart.config.data = genderPredictedData;
+            genderChart.options.title.text = "Prédictions";
+            genderChart.update();
+
+            var fieldNameElement = document.getElementById('pText');
+            fieldNameElement.innerHTML = "La parité sera atteinte dans 10 années, c'est à dire dans 3 JOs ";
+        }
+
+        function genderUpdateLineData() {
+            genderChart.data.datasets[2].data = [, , , , 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000,];
+            genderChart.options.title.text = "Plus de 80 ans ...";
+            genderChart.update();
+
+            var fieldNameElement = document.getElementById('pText');
+            fieldNameElement.innerHTML = "Plus de 80 ans ...";
+
+            var fieldReponse = document.getElementById("gender-reponse")
+            fieldReponse.style.visibility = "hidden";
+        }
+
+        function genderUpdateSummerData() {
+            genderChart.options.title.text = "En route vers la parité ! ";
+            genderChart.update();
+
+        }
+
+        function genderAskQuestion() {
+            var fieldNameElement = document.getElementById('pText');
+            fieldNameElement.innerHTML = " Les <span style='color: #00CED1;'> hommes</span> ont atteint <span style='color: #00CED1;'> 2 000 participants </span> en <span style='color: #00CED1;'>1908</span> … Combien de temps a-t-il fallu attendre pour qu’il y ait au moins <span style='color: #FF69B4;'>2 000 participantes <span>aux Jeux Olympiques ?";
+            var fieldReponse = document.getElementById("gender-reponse")
+            fieldReponse.style.visibility = "visible";
+
+            var fieldRImage = document.getElementById("gender-img")
+            fieldRImage.style.visibility = "hidden";
+        }
+
+
+        </script>
+    </div>
+
+    <!-- Story 5 -->
+    <div id="story-5" class="jarallax">
+        <img class="jarallax-img" src="./images/olympics.jpg" alt="">
+        <iframe src="participants.html" width="100%" height="100%" allowtransparency="true"></iframe>
+    </div>
+
+    <!-- Title -->
+    <div class="jarallax intertitle">
+        <!-- <img class="jarallax-img" src="./images/olympics_2.jpg" alt=""> -->
+        <div><h1>The End</h1></div>
+    </div>
+    <script>
+    jarallax(document.querySelectorAll('.jarallax'), {
+        speed: 0.2
+    });
+    </script>
+</body>
+</html>
