@@ -96,7 +96,7 @@
         <div class="gender-general">
             <div class="gender-text">
                 <div class="gender-titretheme">
-                    <p class="gender-texttitretheme"> En route vers la parité ! </p>
+                    <p class="gender-texttitretheme"> Towards parity ! </p>
                 </div>
 
                 <div class="gender-commentaire">
@@ -198,7 +198,7 @@
                         display: true,
                         scaleLabel: {
                             display: true,
-                            labelString: 'Années'
+                            labelString: 'Years'
                         }
                     }],
                     yAxes: [{
@@ -210,13 +210,13 @@
                         },
                         scaleLabel: {
                             display: true,
-                            labelString: 'Nombre de participants'
+                            labelString: 'Number of participants'
                         }
                     }]
                 },
                 title: {
                     display: true,
-                    text: "Évolution du nombre de participants aux JO d'été"
+                    text: "Evolution of the number of summer Olympics participants "
                 }
             }
         });
@@ -228,30 +228,30 @@
             genderChart.update();
 
             var fieldNameElement = document.getElementById('pText');
-            fieldNameElement.innerHTML = "La parité sera atteinte dans  <span font-weight: bold;'>10 ans </span>, c'est à dire dans <span font-weight: bold;'>3 JOs</span> ";
+            fieldNameElement.innerHTML = "Parity will be reached within  <span font-weight: bold;'>10 years </span>, that is in <span font-weight: bold;'>3 Olympic Games</span> ";
         }
 
         function genderUpdateLineData() {
             genderChart.data.datasets[2].data = [, , , , 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000,];
-            genderChart.options.title.text = "Plus de 80 ans ...";
+            genderChart.options.title.text = "More than 80 years ...";
             genderChart.update();
 
             var fieldNameElement = document.getElementById('pText');
-            fieldNameElement.innerHTML = "Plus de 80 ans ...";
+            fieldNameElement.innerHTML = "More than <span font-weight: bold;'> 80 years </span> ...";
 
             var fieldReponse = document.getElementById("gender-reponse")
             fieldReponse.style.visibility = "hidden";
         }
 
         function genderUpdateSummerData() {
-            genderChart.options.title.text = "En route vers la parité ! ";
+            genderChart.options.title.text = "Towards parity ! ";
             genderChart.update();
 
         }
 
         function genderAskQuestion() {
             var fieldNameElement = document.getElementById('pText');
-            fieldNameElement.innerHTML = " Les <span style='color: #00CED1;'> hommes</span> ont atteint <span style='color: #00CED1;'> 2 000 participants </span> en <span style='color: #00CED1;'>1908</span> … Combien de temps a-t-il fallu attendre pour qu’il y ait au moins <span style='color: #FF69B4;'>2 000 participantes <span>aux Jeux Olympiques ?";
+            fieldNameElement.innerHTML = " <span style='color: #00CED1;'> Men </span> reached <span style='color: #00CED1;'> 2 000 participants </span> in <span style='color: #00CED1;'>1908</span> … How long did it take <span style='color: #FF69B4;'> women <span> to reach 2000 summer Olympic participants ? ";
             var fieldReponse = document.getElementById("gender-reponse")
             fieldReponse.style.visibility = "visible";
 
