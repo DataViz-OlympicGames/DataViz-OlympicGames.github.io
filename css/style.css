@@ -22,6 +22,10 @@ body {
     z-index: -1;
 }
 
+.button{
+	font-size: 20px;
+}
+
 .intertitle{
     display: flex;
     align-items: center;
