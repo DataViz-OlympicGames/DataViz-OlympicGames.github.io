@@ -270,7 +270,7 @@ zingchart.THEME="classic";
     };
      
     zingchart.render({ 
-    	id : "myChar", 
+    	id : 'myChar', 
     	data : myConfig, 
     	height: 500, 
     	width: 725 
