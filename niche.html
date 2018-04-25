@@ -24,18 +24,22 @@
             <div id="viz_niche"></div>
         </div>
         <div id="right-container">
-            <h1> Niche sports connaisseurs </h1>
+            <h1> Countries specialized in niche sports </h1>
             <p>
                 We'll define niche sports as those attracting less than 400 participants per year.<br />
                 Let's take a look at which are these lesser known sports and the countries that sent representatives to these less mainstream events, for the 2016 Summer Games...
             </p>
-            <p>
-                <i>
-                    The size of the group of bubbles is the total number of participants per sport. <br />
-                    Each bubble is a country participating in a niche sport. Hover over the bubbles to see the country name and how many athletes from that country took part in the niche event. <br />
-                    The color of the bubbles represents the continent. Hover over the legend at the bottom to see the countries corresponding to each continent.<br />
-                    The default year shown is 2012. Choose one year or a time frame from the bottom or just hit the play button to see hipster history unfold!
-                </i>
+            <button id=explore onclick="affiche_explication_graph()"> Explore the graph ! </button>
+                <p id="explication">
+                    <span style='color': #00CED1 font-weight: bold;> Hover over the bubbles <span> to see the country name and how many athletes from that country took part in the niche event.<br />
+                    <span style='color': #00CED1 font-weight: bold;> Hover over the legend <span> at the bottom to see the countries corresponding to each continent.<br />
+                    <span style='color': #00CED1 font-weight: bold;> The default year shown is 2012. <span> Choose one year or a time frame from the bottom or just hit the play button to see hipster history unfold!<br />
+                    <button onclick="more_info_graph()"> Help in the graphic interpretation </button>
+                </p>
+                <p id="interpretation">
+                    Bubble size = proportional to the number of participants from a given country participating in a given niche sport.<br />
+                    Size of the group of bubbles = proportional to the number of participants per niche sport.<br />
+                    Bubble color = continent
             </p>
         </div>
     </div>
@@ -61,6 +65,17 @@
             })
             .background("rgba(0,0,0,0.1)")
             .draw()
+        
+        function affiche_explication_graph() {
+            var fieldNameElement = document.getElementById('explication');
+            fieldNameElement.style.visibility = "visible";
+        }
+        
+        function more_info_graph(){
+            var fieldNameElement = document.getElementById('interpretation');
+            fieldNameElement.style.visibility = "visible";
+        }
+        
     </script>
 
 </body>

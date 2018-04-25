@@ -8,7 +8,7 @@
     <script src="./js/d3.js"></script>
 </head>
 <body>
-    <h1>All the medals in the Olympics since 1890</h1>
+    <h1>World map according to Olympic medals</h1>
     <div id="container">
         <div id="left-container">
             <div id="country-info"></div>
@@ -30,7 +30,11 @@
                     <label><input id="flags" type="radio" name="fill" value="flags">Flags</label>
                 </span>
             </div>
-
+            <div id="country-info"></div>
+            <div id="bubble-chart"></div>
+        </div>
+        <div id="right-container">
+            Let’s now look at the world map, representing countries by the total number of medals they have accumulated over all years, taking into account both Summer and Winter Olympic Games.
         </div>
     </div>
     <script>
