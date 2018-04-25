@@ -29,6 +29,7 @@
                 We'll define niche sports as those attracting less than 400 participants per year.<br />
                 Let's take a look at which are these lesser known sports and the countries that sent representatives to these less mainstream events, for the 2016 Summer Games...
             </p>
+            <button id=explore onclick="affiche_explication_graph()"> Explore the graph ! </button>
             <p>
                 <p id="explication">
                     Hover over the bubbles to see the country name and how many athletes from that country took part in the niche event.<br />
@@ -60,6 +61,12 @@
             })
             .background("rgba(0,0,0,0.1)")
             .draw()
+        
+        function affiche_explication_graph() {
+            var fieldNameElement = document.getElementById('explication');
+            fieldReponse.style.visibility = "visible";
+        }
+        
     </script>
 
 </body>
