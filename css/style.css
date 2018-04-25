@@ -189,23 +189,6 @@ div > h1{
 	color:#F0F8FF;
 }
 
-#box{
-	display:flex;
-	width:100%;
-	justify-content: space-evenly;
-}
-
-#baby_1{
-	width:28%
-}
-
-#baby_2{
-	width:28%
-}
-
-#baby_3{
-	width:28%
-}
 
 #intro{
 	display:flex;
@@ -218,18 +201,47 @@ div > h1{
 
 #big_title{
 	height:20%;
+	color:white;
 }
 
 
 #middle_title{
 	display:flex;
 	flex-direction: column;
-	height:50%;
-	background-color:crimson;
-	justify-content: space-evenly;
+	height:70%;
+	color:white;
+	justify-content:space-between;
+	font-size: x-large;
+	font-weight:bolder;
+}
+
+#question{
+	height:30%;
+	font-size:x-large;
+	text-align: center;
 }
 
 #end_title{
 	height:30%;
-	background-color:azure;
+	text-align: center;
+}
+
+#box{
+	display:flex;
+	width:100%;
+	height:30%;
+	justify-content: space-evenly;
+
+}
+
+#baby_1{
+	width:28%
+}
+
+#baby_2{
+	width:28%
+}
+
+#baby_3{
+	width:28%
 }
