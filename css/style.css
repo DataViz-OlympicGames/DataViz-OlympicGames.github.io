@@ -179,3 +179,21 @@ div > h1{
 #bleu{
 	color:#F0F8FF;
 }
+
+#box{
+	display:flex;
+	width:100%;
+}
+
+#baby_1{
+	width:33%
+}
+
+#baby_2{
+	width:33%
+}
+
+#baby_3{
+	width:33%
+}
+
