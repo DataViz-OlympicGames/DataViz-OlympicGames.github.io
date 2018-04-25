@@ -96,6 +96,7 @@ function participantsBubbleChart(strengthBubbles) {
             .style("padding", "8px")
             .style("background-color", "rgb(255,255,255,0.85)")
             .style("border-radius", "6px")
+            .style("border", "2px solid black")
             .style("text-align", "center")
             .style("width", "400px")
             .text("");

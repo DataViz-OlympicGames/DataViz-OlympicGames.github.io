@@ -12,38 +12,17 @@ body {
   float:left;
 }
 
-#controls label {
-    width:170px;
-    margin:4px;
-    background-color:#EFEFEF;
-    border-radius:4px;
-    border:1px solid #D0D0D0;
-}
-
-#controls label span {
-    text-align:center;
-    font-size: 2em;
-    padding:13px 0px;
-    display:block;
-}
-
-#controls label input {
-    visibility: hidden;
-}
-
-#controls input:checked + span {
-    background-color:#404040;
-    color:#F7F7F7;
-}
-
-input[type="radio"] {
-  margin-top: -1px;
-  vertical-align: middle;
-  overflow-y: hidden;
-}
-
-span:nth-child(2) {
-  margin-left: 20px;
+button{
+	font-size: 20px;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
 #country-info {
@@ -70,6 +49,7 @@ circle {
     /* top:50%; */
     float: left;
     width: 65%;
+    text-align: center;
 }
 
 #right-container {
