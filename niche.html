@@ -34,6 +34,7 @@
                     Hover over the bubbles to see the country name and how many athletes from that country took part in the niche event.<br />
                     Hover over the legend at the bottom to see the countries corresponding to each continent.<br />
                     The default year shown is 2012. Choose one year or a time frame from the bottom or just hit the play button to see hipster history unfold!<br />
+                    <button onclick="more_info_graph()"> Help in the graphic interpretation </button>
                 </p>
                 <p id="interpretation">
                     Bubble size = proportional to the number of participants from a given country participating in a given niche sport.<br />
@@ -62,6 +63,11 @@
         
         function affiche_explication_graph() {
             var fieldNameElement = document.getElementById('explication');
+            fieldNameElement.style.visibility = "visible";
+        }
+        
+        function more_info_graph(){
+            var fieldNameElement = document.getElementById('interpretation');
             fieldNameElement.style.visibility = "visible";
         }
         
