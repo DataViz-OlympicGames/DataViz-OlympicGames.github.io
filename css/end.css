@@ -32,3 +32,8 @@ body {
     float: left;
     width: 33%;
 }
+
+.lnr-envelope {
+  color: #0F52BA;
+  font-size: 20px;
+}
