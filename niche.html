@@ -26,20 +26,23 @@
         <div id="right-container">
             <h1> Countries specialized in niche sports </h1>
             <p>
-                We'll define niche sports as those attracting less than 400 participants per year.<br />
-                Let's take a look at which are these lesser known sports and the countries that sent representatives to these less mainstream events, for the 2016 Summer Games...
+                We'll define <b>niche sports</b> as those attracting fewer than <b>400 participants</b> per year.<br />
+                Let's take a look at which are these lesser known sports and the <b>countries that sent representatives</b> to these less mainstream events, for the 2016 Summer Games...
             </p>
             <button id=explore onclick="affiche_explication_graph()"> Explore the graph ! </button>
-                <p id="explication">
-                    <span style='color': #00CED1 font-weight: bold;> Hover over the bubbles <span> to see the country name and how many athletes from that country took part in the niche event.<br />
-                    <span style='color': #00CED1 font-weight: bold;> Hover over the legend <span> at the bottom to see the countries corresponding to each continent.<br />
-                    <span style='color': #00CED1 font-weight: bold;> The default year shown is 2012. <span> Choose one year or a time frame from the bottom or just hit the play button to see hipster history unfold!<br />
-                    <button onclick="more_info_graph()"> Help in the graphic interpretation </button>
-                </p>
-                <p id="interpretation">
-                    Bubble size = proportional to the number of participants from a given country participating in a given niche sport.<br />
-                    Size of the group of bubbles = proportional to the number of participants per niche sport.<br />
-                    Bubble color = continent
+            <p id="explication">
+                Hover over the <b>bubbles</b> to see the <b>country name</b> and how many <b>athletes</b> from that country took part in the niche event.<br />
+                Hover over the <b>legend</b> at the bottom to see the countries corresponding to each continent.<br />
+                <b>The default year shown is 2012.</b>
+                Choose <b>one year</b> or a <b>time frame</b> from the bottom or just hit the <b>play button</b> to see hipster history unfold!<br />
+                <button onclick="more_info_graph()"> Graph elements </button>
+            </p>
+            <p id="interpretation">
+                <i>
+                    bubble size = number of participants from a given country in a given niche sport.<br />
+                    bubble group size = number of participants per niche sport, all countries <br />
+                    bubble color = continent
+                </i>
             </p>
         </div>
     </div>
@@ -59,11 +62,18 @@
             .depth(1)              // 0-based depth
             .size("Participants")         // key name to size bubbles
             .color("ContinentCode")        // color by each group
-            .time({
+            .time({ 
                 "value": "Year",
-                "solo": 2012
+                "mute": [1901, 1902, 1903],
+                "solo": 2012,
+                "color": "rgba(0,0,0,1)"
             })
-            .background("rgba(0,0,0,0.1)")
+            .style("color", function (d) {
+                var color = this.parentNode.id
+                return d === "Legible" ? d3plus.color.legible(color) : color
+            })
+            .background("rgba(64,64,64,1)")
+
             .draw()
         
         function affiche_explication_graph() {
