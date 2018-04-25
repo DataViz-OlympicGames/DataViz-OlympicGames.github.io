@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet"/type="text/css" href="./css/medals-bubbles.css">
     <script src="./js/medals-bubbles.js"></script>
     <script src="./js/d3.js"></script>
@@ -15,15 +15,28 @@
             <div id="bubble-chart"></div>
         </div>
         <div id="right-container">
+            <p>
             Let’s now look at the world map, representing countries by the total number of medals they have accumulated over all years, taking into account both Summer and Winter Olympic Games.
-
+            </p>
             <div id="controls">
-                <span>
-                    <label><input id="combine" type="radio" name="grouping" value="combine" checked><span>Combine</span></label>
-                    <label><input id="continents" type="radio" name="grouping" value="continents"><span>Continents</span></label>
-                    <label><input id="country-centers" type="radio" name="grouping" value="country-centers"><span>Country Centers</span></label>
-                    <label style="visibility: hidden"><input id="population" type="radio" name="grouping" value="population"><span>Medals</span></label>
-                </span>
+            	<ul class="list">
+            		<li class="list__item">
+                        <input id="combine" class="radio-btn" type="radio" name="grouping" value="combine" checked/>
+                        <label for="d-opt" class="label"><span>Combine</span></label>
+            		</li>
+            		<li class="list__item">
+                        <input id="continents" class="radio-btn" type="radio" name="grouping" value="continents"/>
+                        <label for="d-opt" class="label"><span>Continents</span></label>
+            		</li>
+            		<li class="list__item">
+                        <input id="country-centers" class="radio-btn" type="radio" name="grouping" value="country-centers"/>
+                        <label for="d-opt" class="label"><span>Country Centers</span></label>
+            		</li>
+            		<li class="list__item" style="visibility: hidden">
+                        <input id="population" class="radio-btn" type="radio" name="grouping" value="population"/>
+                        <label for="d-opt" class="label"><span>Medals</span></label>
+            		</li>
+            	</ul>
                 <span style="visibility: hidden">
                     <label><input id="colors" type="radio" name="fill" value="colors" checked>Colors</label>
                     <label><input id="flags" type="radio" name="fill" value="flags">Flags</label>

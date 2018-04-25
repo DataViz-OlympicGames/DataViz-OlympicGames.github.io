@@ -7,23 +7,29 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+
+#end-all {
+    background-color: #ffffff;
+}
+
 #team {
-    /* top:50%; */
+    margin-left: 10px;
     float: left;
     width: 30%;
-    height: 100%;
 }
 
 #data-sources-tools {
     float: left;
     width: 30%;
-    height: 100%;
-    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: #ffffff; */
 }
 
 #logo-ensae {
     float: left;
-    width: 35%;
-    height: 100%;
-    padding: 10px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: #ffffff; */
 }

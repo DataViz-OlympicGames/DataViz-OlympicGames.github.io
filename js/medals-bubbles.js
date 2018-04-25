@@ -30,7 +30,7 @@ function createBubbleChart(error, countries, continentNames) {
   addFillListener();
   addGroupingListeners();
 
-  document.getElementById("country-centers").checked = true;
+  // document.getElementById("country-centers").checked = true;
 
   toggleContinentKey(true);
 
