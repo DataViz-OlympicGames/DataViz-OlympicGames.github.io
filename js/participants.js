@@ -18,8 +18,8 @@ function changeDataParticipants(){
     if( participationsNumber === 10){
         document.getElementById("winner").innerHTML = "<h2>Ian Millar a.k.a Captain Canada!</h2>"
                 + "Sport: " + "Equestrianism" + "<br/>"
-                + "He hold the most games participations record.<br/>"
-                + "Ian Millar appeared in 10 summer competitions<br/>"
+                + "He holds the record for most games participations.<br/>"
+                + "Ian Millar competed in 10 Summer Games<br/>"
                 + "(from 1974 to 2012),<br/>"
                 + "and he won his first medal in 2008.<br/>"
                 + "<img alt=\"Image illustrative de l\'article Ian Millar\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Ian_Millar_on_horse.jpg/200px-Ian_Millar_on_horse.jpg\" width=\"200\" height=\"419\">";
@@ -156,10 +156,10 @@ function participantsBubbleChart(strengthBubbles) {
                 if(d.Athlete_unique_url === "/olympics/athletes/mi/ian-millar-1.html"){
                     content = "<h2>Ian Millar a.k.a Captain Canada!</h2>"
                             + "Sport: " + d.Sport + "<br/>"
-                            + "He hold the most games participations record.<br/>"
-                            + "Ian Millar appeared in 10 summer competitions<br/>"
-                            + "(from 1974 to 2012),<br/>"
-                            + "and he won his first medal in 2008."
+                            + "He holds the record for most games participations.<br/>"
+							+ "Ian Millar competed in 10 Summer Games<br/>"
+							+ "(from 1974 to 2012),<br/>"
+							+ "and he won his first medal in 2008.<br/>"
                             + "<img alt=\"Image illustrative de l\'article Ian Millar\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Ian_Millar_on_horse.jpg/200px-Ian_Millar_on_horse.jpg\" width=\"200\" height=\"419\">";
                 }
                 return content;
