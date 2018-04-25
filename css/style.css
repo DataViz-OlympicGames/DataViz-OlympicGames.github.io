@@ -183,18 +183,19 @@ div > h1{
 #box{
 	display:flex;
 	width:100%;
+	justify-content: center;
 }
 
 #baby_1{
-	width:33%
+	width:28%
 }
 
 #baby_2{
-	width:33%
+	width:28%
 }
 
 #baby_3{
-	width:33%
+	width:28%
 }
 
 #intro{
