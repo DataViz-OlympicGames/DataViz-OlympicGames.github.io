@@ -8,7 +8,7 @@ body {
     background-color: rgba(255,255,255,0.75);
     display: flex;
     align-items: center;
-    text-align: center;
+    text-align: left;
 }
  #container {
      width: 100%;
