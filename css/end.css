@@ -1,4 +1,3 @@
-/* End screen */
 body {
     margin: 0;
     padding: 0;
@@ -8,37 +7,23 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.end-box-all{
-	display: flex;
-	width: 98.5%;
-
-    flex-direction: row;
-
+#team {
+    /* top:50%; */
+    float: left;
+    width: 30%;
     height: 100%;
-	align-content:center;
-    position: absolute;
 }
 
-.end-box-us{
-	background: #696969;
-   flex: 1;
-   flex-direction: column;
-   position: relative;
-   height: 100%;
-   align-content:center;
-   margin-right:15px;
+#data-sources-tools {
+    float: left;
+    width: 30%;
+    height: 100%;
+    padding: 10px;
 }
 
-.end-box-logo{
-	background: #696969;
-   flex: 1;
-   flex-direction: column;
-   position: relative;
-   height: 100%;
-   align-content:center;
-   margin-right:15px;
+#logo-ensae {
+    float: left;
+    width: 35%;
+    height: 100%;
+    padding: 10px;
 }
-
-
-}
-
