@@ -45,6 +45,11 @@
         var visualization = d3plus.viz()
             .container("#viz_niche")     // container DIV to hold the visualization
             .data("./data/niche_summer_conti.json")     // data to use with the visualization
+            // .shapeConfig({
+            //     labelConfig: {
+            //         color: "#0A6F4B"
+            //     }
+            // })
             .type("bubbles")       // visualization type
             .id(["Sport", "Country"]) // nesting keys
             .depth(1)              // 0-based depth

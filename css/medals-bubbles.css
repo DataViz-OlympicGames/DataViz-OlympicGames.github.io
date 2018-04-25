@@ -22,7 +22,7 @@ body {
 
 #controls label span {
     text-align:center;
-    font-size: 32px;
+    font-size: 2em;
     padding:13px 0px;
     display:block;
 }
@@ -39,6 +39,7 @@ body {
 input[type="radio"] {
   margin-top: -1px;
   vertical-align: middle;
+  overflow-y: hidden;
 }
 
 span:nth-child(2) {

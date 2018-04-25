@@ -1,5 +1,5 @@
-var width = 1200,
-height=1000;
+var width = 900,
+height=800;
 d3.csv('./data/participants.csv', function(error, data) {
     if (error) {
         console.error('Error getting or parsing the data.');
@@ -7,7 +7,7 @@ d3.csv('./data/participants.csv', function(error, data) {
     }
     // selection.datum() returns the bound datum for the first element in the selection and
     //  doesn't join the specified array of data with the selected elements
-    var chart = participantsBubbleChart(-10).width(width).height(height);
+    var chart = participantsBubbleChart(-5).width(width).height(height);
     d3.select('#participants-chart').datum(data).call(chart);
 });
 
@@ -15,6 +15,15 @@ var participationsNumberCompare = parseInt(document.getElementById("rangePartici
 
 function changeDataParticipants(){
     var participationsNumber = parseInt(document.getElementById("rangeParticipations").value);
+    if( participationsNumber === 10){
+        document.getElementById("winner").innerHTML = "<h2>Ian Millar a.k.a Captain Canada!</h2>"
+                + "Sport: " + "Equestrianism" + "<br/>"
+                + "He hold the most games participations record.<br/>"
+                + "Ian Millar appeared in 10 summer competitions<br/>"
+                + "(from 1974 to 2012),<br/>"
+                + "and he won his first medal in 2008.<br/>"
+                + "<img alt=\"Image illustrative de l\'article Ian Millar\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Ian_Millar_on_horse.jpg/200px-Ian_Millar_on_horse.jpg\" width=\"200\" height=\"419\">";
+    }
 
     d3.csv('./data/participants.csv', function(error, data) {
         if (error) {
@@ -35,7 +44,7 @@ function changeDataParticipants(){
             increaseParticipationsNumber = true;
         }
 
-        var strength = participationsNumber > 4 ? '-30':'-10';
+        var strength = participationsNumber > 4 ? '-10':'-5';
 
         console.log('participations',increaseParticipationsNumber, participationsNumber, participationsNumberCompare);
         if(!increaseParticipationsNumber){
@@ -67,9 +76,9 @@ function changeDataParticipants(){
 
 //TODO: Couleur = continent
 function participantsBubbleChart(strengthBubbles) {
-    var width = 1200,
+    var width = 900,
         height = 800,
-        maxRadius = 6,
+        maxRadius = 5,
         columnForColors = "ContinentCode",
         columnForRadius = "Total";
 
@@ -112,7 +121,7 @@ function participantsBubbleChart(strengthBubbles) {
             return +d[columnForRadius];
         }), d3.max(data, function(d) {
             return +d[columnForRadius];
-        })]).range([3, 20])
+        })]).range([2, 10])
 
         var node = svg.selectAll("circle")
             .data(data)

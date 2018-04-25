@@ -10,7 +10,7 @@ function createBubbleChart(error, countries, continentNames) {
   .domain(continents.values());
 
   var width = 900,
-  height = 800;
+  height = 700;
   var svg,
   circles,
   circleSize = { min: 10, max: 80 };
@@ -29,6 +29,10 @@ function createBubbleChart(error, countries, continentNames) {
   addFlagDefinitions();
   addFillListener();
   addGroupingListeners();
+
+  document.getElementById("country-centers").checked = true;
+
+  toggleContinentKey(true);
 
   function createSVG() {
     svg = d3.select("#bubble-chart")
@@ -264,7 +268,7 @@ function createBubbleChart(error, countries, continentNames) {
   }
 
   function addFlagDefinitions() {
-    
+
   }
 
   function addFillListener() {
