@@ -1,35 +1,34 @@
 body {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
     font-family: 'Roboto', sans-serif;
+    background-color: rgba(255,255,255,0.75);
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
-
+ #container {
+     width: 100%;
+ }
 
 #end-all {
     background-color: #ffffff;
 }
 
 #team {
-    margin-left: 10px;
     float: left;
-    width: 30%;
+    width: 33%;
 }
 
 #data-sources-tools {
     float: left;
-    width: 30%;
-    margin-left: auto;
-    margin-right: auto;
-    /* background-color: #ffffff; */
+    width: 33%;
 }
 
 #logo-ensae {
     float: left;
-    width: 30%;
-    margin-left: auto;
-    margin-right: auto;
-    /* background-color: #ffffff; */
+    width: 33%;
 }
