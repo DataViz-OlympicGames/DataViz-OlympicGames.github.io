@@ -1,0 +1,51 @@
+.list {
+  flex: 0 0 20rem;
+  list-style-type: none;
+}
+
+.list__item {
+  position: relative;
+}
+.list__item:hover > .label {
+  color: #009688;
+}
+.list__item:hover > .label::before {
+  border: 0.5rem solid #009688;
+  margin-right: 2rem;
+}
+
+.radio-btn {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+.radio-btn:checked + .label {
+  color: #009688;
+}
+.radio-btn:checked + .label::before {
+  margin-right: 2rem;
+  border: 0.5rem solid #009688;
+  background: #000;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 0;
+  color: #000;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.25s linear;
+}
+
+.label::before {
+  display: inline-block;
+  content: "";
+  height: 1.125rem;
+  width: 1.125rem;
+  margin-right: 0.625rem;
+  border: 0.5rem solid #000;
+  border-radius: 50%;
+  transition: all 0.25s linear;
+}

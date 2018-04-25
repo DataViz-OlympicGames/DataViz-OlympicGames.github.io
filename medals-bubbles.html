@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet"/type="text/css" href="./css/medals-bubbles.css">
+    <link rel="stylesheet"/type="text/css" href="./css/medals-bubbles-list.css">
     <script src="./js/medals-bubbles.js"></script>
     <script src="./js/d3.js"></script>
 </head>
@@ -20,15 +21,15 @@
             </p>
             <div id="controls">
             	<ul class="list">
-            		<li class="list__item">
+            		<li class="list__item" onclick="updateChart('combine')">
                         <input id="combine" class="radio-btn" type="radio" name="grouping" value="combine" checked/>
                         <label for="d-opt" class="label"><span>Combine</span></label>
             		</li>
-            		<li class="list__item">
+            		<li class="list__item" onclick="updateChart('continents')">
                         <input id="continents" class="radio-btn" type="radio" name="grouping" value="continents"/>
                         <label for="d-opt" class="label"><span>Continents</span></label>
             		</li>
-            		<li class="list__item">
+            		<li class="list__item" onclick="updateChart('country-centers')">
                         <input id="country-centers" class="radio-btn" type="radio" name="grouping" value="country-centers"/>
                         <label for="d-opt" class="label"><span>Country Centers</span></label>
             		</li>

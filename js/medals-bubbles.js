@@ -1,3 +1,12 @@
+setTimeout(function(){
+     document.getElementById("country-centers").click(); 
+ }, 3000);
+
+
+function updateChart(value) {
+    document.getElementById(value).click();
+}
+
 function createBubbleChart(error, countries, continentNames) {
   var populations = countries.map(function(country) { return +country.medals; });
   var meanPopulation = d3.mean(populations),
