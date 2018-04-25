@@ -212,7 +212,7 @@ div > h1{
 	width:100%;
 	height:100%;
 	flex-direction: column;
-	justify-content: space-evenly
+	justify-content: space-evenly;
 }
 
 
@@ -222,8 +222,11 @@ div > h1{
 
 
 #middle_title{
+	display:flex;
+	flex-direction: column;
 	height:50%;
-	background-color:crimson
+	background-color:crimson;
+	justify-content: space-evenly;
 }
 
 #end_title{
