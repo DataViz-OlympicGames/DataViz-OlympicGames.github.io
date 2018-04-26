@@ -2,6 +2,8 @@ zingchart.THEME="classic";
     var myConfig = {
         "background-color":"white",
         "type":"line",
+        "crosshair-x": {
+         },
         "title":{
             "text":"Evolution of the number of sports by event",
             "color":"#333",
