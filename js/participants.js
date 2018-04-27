@@ -1,10 +1,14 @@
 var width = 900,
-height=800;
+height=800,
+numberParticipants = 0;
 d3.csv('./data/participants.csv', function(error, data) {
     if (error) {
         console.error('Error getting or parsing the data.');
         throw error;
     }
+    numberParticipants = data.length;
+    updateNumberParticipants(numberParticipants);
+    console.log("numberParticipants", numberParticipants);
     // selection.datum() returns the bound datum for the first element in the selection and
     //  doesn't join the specified array of data with the selected elements
     var chart = participantsBubbleChart(-5).width(width).height(height);
@@ -12,6 +16,10 @@ d3.csv('./data/participants.csv', function(error, data) {
 });
 
 var participationsNumberCompare = parseInt(document.getElementById("rangeParticipations").value);
+
+function updateNumberParticipants(numberParticipants){
+    document.getElementById("number-participants").innerHTML = numberParticipants + ' participants';
+}
 
 function changeDataParticipants(){
     var participationsNumber = parseInt(document.getElementById("rangeParticipations").value);
@@ -35,6 +43,9 @@ function changeDataParticipants(){
         var filteredDataParticipants = data.filter(function(d){
             return d.Participations >= parseInt(participationsNumber) ;
         });
+
+        numberParticipants = filteredDataParticipants.length;
+        updateNumberParticipants(numberParticipants);
 
         //Replace value in the button
         document.getElementById("participations").innerHTML = parseInt(participationsNumber) + ' games and more';

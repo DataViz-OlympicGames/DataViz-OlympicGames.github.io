@@ -33,6 +33,7 @@ circle {
     width: 70%;
     height: 100%;
     text-align: center;
+    /* position: relative; */
     /* background-color: rgba(100,100,100,0.75); */
 }
 
@@ -85,3 +86,13 @@ button{
     margin: 4px 2px;
     cursor: pointer;
 }
+
+/* #number-participants {
+    position: absolute;
+    font-weight: bold;
+
+    font-size: 20px;
+    top: 20px;
+    left: 20px;
+
+} */
