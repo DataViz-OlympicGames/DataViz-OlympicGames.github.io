@@ -23,5 +23,6 @@ body {
     padding: 10px;
 }
 .d3plus_label{
- color: white;   
+     fill: white !important;
+    font-family: 'Roboto', sans-serif !important;
 }
